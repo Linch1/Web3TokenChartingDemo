@@ -1,0 +1,122 @@
+.home-bg {
+    background: var(--home-bg);
+    width: calc(100% - 75px);
+    height: 100vh;
+}
+
+.search-container {
+    background: var(--searchcontainer-bg);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px var(--searchcontainer-bg);
+    margin-bottom: 40px;
+}
+
+.home-title {
+    font-size: 32px;
+    font-family: 'Anton', sans-serif;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin-bottom: 30px;
+}
+
+.home-title .red-text{
+    color: var(--red);
+
+}
+
+
+/* get featured area */
+
+.get-featured {
+    color: var(--black-white);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: .5rem;
+    /* margin-top: 40px; */
+}
+
+.change-color {
+    color: var(--red);
+}
+
+ul {
+    list-style: none;
+}
+
+.get-featured-ul li {
+    color: var(--gray-lightgray);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: block;
+}
+
+.bg-on-mobile {
+    background: transparent;
+}
+.get-featured-ul li{
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width:992px) {
+    .mobile-only {
+        display: block;
+    }
+    
+    .desktop-only {
+        display: none;
+    }
+
+    .home-bg {
+        width: 100%;
+        padding-top: 55px;
+    }
+
+    .home-title {
+        font-size: 16px;
+        margin-bottom: 15px;
+        color: var(--blue-white);
+    }
+
+    .search-container {
+        padding: 20px 0;
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+
+    .bg-on-mobile {
+        background: var(--white-darkgray);
+        padding: 10px;
+        /* margin-top: 40px; */
+        border-radius: 4px;
+    }
+
+    .get-featured {
+        font-size: 11px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+
+    .get-featured-ul li {
+        font-size: 9px;
+        line-height: 1.3;
+    }
+
+    
+
+}

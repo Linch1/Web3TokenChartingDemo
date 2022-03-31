@@ -1,0 +1,19 @@
+.address-link-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.address-link {
+    margin-right: 1rem;
+}
+
+.address-link:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width:992px) {
+    .address-link {
+        margin-right: .5rem;
+    }
+}

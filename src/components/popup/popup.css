@@ -1,0 +1,88 @@
+.popup-container{
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    z-index: 100;
+
+    width: 80%;
+    max-width: 500px;
+
+    background-color: var(--bg-secondary);
+    border-radius: 10px;
+    transition: all .3s linear;
+    transform: translateY(-250%);
+}
+.popup-container.open{
+    transform: translateY(0%);
+}
+.popup-container .popup-text{
+    font-weight: 500;
+    color: var(--color);
+}
+
+.popup-container .popup{
+    position: relative;
+    padding: 5px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px -4px rgba(0,0,0,.12),0 6px 16px 0 rgba(0,0,0,.08),0 9px 28px 8px rgba(0,0,0,.05);
+    pointer-events: all;
+    font-size: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.popup-container .popup .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup-container .popup .title h5{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.popup-container .popup svg{
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.ant-message-notice-content {
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+.popup-container-pricing{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    max-width: 710px;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 10;
+    border-radius: 10px;
+    display: none;
+}
+.popup-container-pricing.open{
+    display: block;
+}
+.popup-container-pricing .popup{
+    position: relative;
+}
+.popup-container-pricing svg{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.popup-container-pricing img{
+    object-fit: contain;
+    width: 100%;
+}

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* overflow-x: hidden; */
+    font-family: 'Barlow', sans-serif;
+}
+
+@media screen and (max-width:540px) {
+    body {
+        overflow-x: hidden;
+    }
+}

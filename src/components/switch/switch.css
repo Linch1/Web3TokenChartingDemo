@@ -1,0 +1,183 @@
+/* Toggle Button */
+.cm-toggle {
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	position: relative;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	height: 22px;
+	
+	/* margin: 10px; */
+}
+
+
+/* To create surface of toggle button */
+.cm-toggle:after {
+	content: '';
+	width: 55px;
+	height: 22px;
+	display: inline-block;
+    background: #39434c;
+	border-radius: 18px;
+	clear: both;
+}
+
+
+/* Contents before checkbox to create toggle handle */
+.cm-toggle:before {
+	content: '';
+	width: 19px;
+	height: 19px;
+	display: block;
+	position: absolute;
+	left: 2px;
+	top: 1px;
+	z-index: 2;
+	border-radius: 50%;
+	background: rgb(255, 255, 255);
+	-webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+	        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Shift the handle to left on check event */
+.cm-toggle:checked:before {
+	left: 34px;
+	-webkit-box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
+	        box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
+			
+}
+/* Background color when toggle button will be active */
+.cm-toggle:checked:after {
+	background: rgba(196, 195, 195, 0.55);
+}
+
+
+/* Transition for smoothness */
+.cm-toggle,
+.cm-toggle:before,
+.cm-toggle:after,
+.cm-toggle:checked:before,
+.cm-toggle:checked:after {
+	transition: ease .3s;
+	-webkit-transition: ease .3s;
+	-moz-transition: ease .3s;
+	-o-transition: ease .3s;
+}
+
+/* another switch */
+
+.darkmode-container {
+	position: relative;
+	height: 22px;
+	cursor: pointer;
+	width: 55px;
+}
+
+.dark-txt, .light-txt {
+	position: absolute;
+	top: 2px;
+	font-size: 10px;
+	font-weight: 700;
+	color: var(--dark-light);
+	opacity: 1;
+	transition: opacity .1s ease-in-out;
+}
+
+.light-txt {
+	right: 46%;	
+	color: white;
+}
+
+.dark-txt {
+	left: 46%;
+}
+
+.light-txt.hide {
+	opacity: 0;	
+}
+
+.dark-txt.hide {
+	opacity: 0;
+}
+
+.sun {
+	position: absolute;
+	border-radius: 50%;
+	right: 4px;
+	top: 3px;
+	height: 15px;
+	z-index: 3;
+	opacity: 1;
+	transition: all .2s ease-in;
+	transform: translate(0px);
+}
+
+.sun.hide {
+	opacity: 0;
+	transform: translate(-13px);
+}
+
+.moon {
+	position: absolute;
+	border-radius: 50%;
+	left: 3px;
+	top: 4px;
+	height: 15px;
+	z-index: 3;
+	opacity: 1;
+	transition: all .2s ease-in;
+	transform: translate(0px);
+}
+
+.moon.hide {
+	opacity: 0;
+	transform: translate(13px);
+}
+
+@media screen and (max-width:992px) {
+	.cm-toggle {
+		height: 19px;
+	}
+	
+	
+	/* To create surface of toggle button */
+	.cm-toggle:after {
+		height: 19px;
+	}
+	
+	
+	/* Contents before checkbox to create toggle handle */
+	.cm-toggle:before {
+		width: 17px;
+		height: 17px;
+	}
+	
+	/* Shift the handle to left on check event */
+	.cm-toggle:checked:before {
+		left: 36px;
+	}
+	
+	/* another switch */
+	
+	.darkmode-container {
+		height: 20px;
+	}
+	
+	.dark-txt, .light-txt {
+		top: 3px;
+		font-size: 9px;
+	}
+	
+	.sun {
+		right: 4px;
+		top: 3px;
+		height: 13px;
+	}
+	
+	.moon {
+		left: 3px;
+		top: 4px;
+		height: 13px;
+	}
+}

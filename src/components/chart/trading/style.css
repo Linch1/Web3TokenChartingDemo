@@ -1,0 +1,47 @@
+.TVChartContainer {
+	height: calc(100vh);
+}
+.TVChartContainer.powered {
+	height: calc(100vh - 40px);
+}
+
+
+.chart-section {
+	background-color: var(--chart-section);
+}
+.chart-section.dark{
+	--powered-by: white;
+    --chart-section: #171b25
+}
+.chart-section.light{
+	--powered-by: #131722;
+    --chart-section: #fff
+}
+
+.powered-by {
+	color: var(--powered-by);
+	font-size: 14px;
+	font-weight: 500;
+	font-family: 'Anton', sans-serif;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	height: 40px;
+	
+}
+.powered-by .tag {
+	margin-left: 10px;
+}
+.powered-logo{
+	color: var(--powered-by);
+	margin: 10px 5px;
+	margin-right: 10px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #80808026;
+}
+.powered-logo:hover{
+	color: var(--powered-by);
+}
