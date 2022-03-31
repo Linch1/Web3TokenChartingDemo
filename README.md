@@ -14,7 +14,7 @@ https://github.com/Linch1/Web3TokenCharting
 3. Specify the url of the `Web3TokenCharting` server (Default: `http://localhost:5006` ) inside the `.env` property `REACT_APP_CHART_SERVER_URL`
 3. run `npm start`
 
-### Images of this working
+### Images of this frontend working
 
 <img src="https://i.ibb.co/RBtB4Pr/Schermata-da-2022-04-01-00-23-58.png" width="25%"></img> 
 <img src="https://i.ibb.co/s98r2h4/Schermata-da-2022-04-01-00-24-06.png" width="25%"></img> 
