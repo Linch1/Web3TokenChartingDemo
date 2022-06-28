@@ -34,8 +34,8 @@ const ChartTokenPairs = ({
                                 <td><img className="router-logo" src={UtilsToken.getRouterLogo(router)}></img></td>
                                 <td> {UtilsToken.getRouterName(router)} </td>
                                 <td><a href={UtilsToken.getExplorerLinkContract(EnumChainId.BSC, pairAdd)} target="_blank">{pair.tokens[0]}/{pair.tokens[1]}</a></td>
-                                <td>$ {parseFloat(pair.mainReserveValue.toFixed(1)).toLocaleString()}</td>
-                                <td>$ {pair.value.toFixed(3)}</td>
+                                <td>$ {parseFloat(pair.mainReserveValue?.toFixed(1)).toLocaleString()}</td>
+                                <td>$ {pair.value?.toFixed(3)}</td>
                             </tr>
                         )
                     })
